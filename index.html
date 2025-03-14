@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Flexbox</title>
+    <style>
+      * {
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .container{
+        border: 1px solid #bdbbbb;
+        box-shadow: .5rem .5rem .3rem .01rem #bdbbbb;
+        padding: 1rem;
+        height: 30rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: start;
+      }
+
+      .item {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        margin: .1rem;
+        padding: 1rem;
+        width: 5rem;
+        height: 3rem;
+      }
+
+      .logo {
+        flex-grow: 1;
+      }
+
+      .titulo-do-site {
+        flex-grow: 12;
+      }
+
+      .menu-sandwich {
+        flex-grow: 1;
+      }
+
+      .painel {
+        border: 3px solid red;
+        display: flex;
+        
+      }
+    </style>
+</head>
+<body>
+    <header class="cabeçario">
+        <div class="item logo">Logo</div>
+        <div class="item titulo-do-site">Título do Site</div>
+        <div class="item menu-sandwich">Menu</div>
+    </header>
+</body>
+</html>
